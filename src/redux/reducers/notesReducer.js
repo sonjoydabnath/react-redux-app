@@ -32,14 +32,11 @@ export default function ( state = initialState, action ){
         }
         case EDIT_NOTE:{
             let item = {...action.payload, id: action.id};
-
             let items = state.items.map( x => {
                 if( x.id === action.id )
                     return item;
                 return x;
             } );
-
-            console.log('upd data ', items[0], item);
             return {
                 ...state,
                 items: [...items],

@@ -11,7 +11,6 @@ export function createNote( noteData ){
 }
 
 export function fetchNotes(){
-    console.log('fetching notes!');
     return function ( dispatch ) {
         dispatch({
             type: FETCH_NOTES,
