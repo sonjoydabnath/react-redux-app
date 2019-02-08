@@ -1,10 +1,10 @@
 import { CREATE_NOTE, FETCH_NOTES, DELETE_NOTE, EDIT_NOTE, LOCK_TO_EDIT_NOTE } from '../actions/actionType';
 
 const initialState = {
-    items: [ {noteText:'note 1', id: 112}, {noteText:'note 2', id: 113} ],
+    items: [ {noteText:'note 1', id: 1}, {noteText:'note 2', id: 2} ],
     showItems: [],
     editId: null,
-    maxId: 0,
+    maxId: 2,
 }
 
 export default function ( state = initialState, action ){
