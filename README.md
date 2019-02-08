@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## React-Redux
+This project contains [redux](https://redux.js.org/) setup with lots of boilerplate codes. This is a demo project to setup redux with react. This `codebase` or just `src/redux/` items can be used to start redux integration with any react app.
+
+To get started with this project clone it and `cd` to project directory and run `npm install` then `npm start`
+
+
 ## Available Scripts
 
 In the project directory, you can run:

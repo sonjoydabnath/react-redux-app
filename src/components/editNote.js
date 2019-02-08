@@ -18,7 +18,6 @@ class EditNoteForm extends Component {
     onSubmit(e) {
         e.preventDefault();
         this.props.editNote( this.state.id, {noteText: this.state.noteText} );
-        //this.setState( {noteText: ''} );
     }
 
     render() {
@@ -27,7 +26,7 @@ class EditNoteForm extends Component {
                 <form onSubmit={this.onSubmit}>
                     <textarea rowa={5} name='noteText' placeholder='Write a note!' value={this.state.noteText} onChange={this.onChange} required />
                     <span> {'\u00A0'} {'\u00A0'} </span>
-                    <input type='submit' value='post' />
+                    <input type='submit' value='update' />
                 </form>
             </div>
         )
